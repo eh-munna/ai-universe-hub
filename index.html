@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#ffffff]">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- page-title -->
+    <title>AI Universe</title>
+    <!-- daisy-ui-tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/42dc78e607.js" crossorigin="anonymous"></script>
+  </head>
+  <!-- body-started -->
+  <body>
+    <!-- header-started -->
+    <header
+      class="container text-center mx-auto px-2 md:px-4 my-2 md:my-4 space-y-2 md:space-y-4"
+    >
+      <h1 class="text-4xl font-semibold text-[#111111] capitalize">
+        AI Universe Hub
+      </h1>
+
+      <!-- sort-button -->
+      <button id="sort-date"
+        class="btn font-normal bg-[#EB5757] border-0 text-[#FFFFFF] capitalize text-lg md:text-xl"
+      >
+        Sort By Date
+    </button>
+    </header>
+    <!-- header-ended -->
+
+    <!-- main-content-started -->
+    <main class="container mx-auto px-2 md:px-4">
+      <!-- spinner-started -->
+      <div id="load-spinner" class="text-center mx-auto my-2">
+        <button class="btn btn-square loading"></button>
+      </div>
+      <!-- spinner-ended -->
+      <!-- all-cards-started -->
+      <div id="all-cards" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <!-- single-card-started -->
+
+        <!-- single-card-ended -->
+      </div>
+      <!-- all-cards-ended -->
+    </main>
+    <!-- main-content-ended -->
+
+    <!-- footer-started -->
+    <footer
+      class="container text-center mx-auto px-2 md:px-4 my-2 md:my-4 space-y-2 md:space-y-4"
+    >
+      <!-- see-more-button -->
+      <button id="see-more""
+        onclick="fetchAllData()"
+        class="hidden btn font-normal bg-[#EB5757] border-0 text-[#FFFFFF] capitalize text-lg md:text-xl"
+      >
+        See More
+    </button> 
+    </footer>
+    <!-- footer-ended -->
+<!-- The button to open modal -->
+<!-- modal-body-started -->
+<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="container mx-auto">
+    <!-- modal-box-started -->
+    <div id="modal-details" class="modal-box w-full md:w-3/4 mx-auto max-w-full bg-[white] grid grid-cols-1 md:grid-cols-2 gap-2 md:realtive">
+      <!-- details-text-content-started -->
+      
+    </div>
+    <!-- modal-box-ended -->
+  </div>
+</div>
+<!-- modal-body-ended -->
+
+
+
+
+
+    <!-- custom-js -->
+    <script src="script.js"></script>
+    <!-- <script src="test.js"></script> -->
+  </body>
+  <!-- body-ended -->
+</html>
+
